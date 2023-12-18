@@ -3,6 +3,8 @@ import React, {useState} from "react";
 function ObjectExample () {
     // age : '20' 은 문자열 age : 20 은 int
     //const [person, setPerson] = useState({name : 'KH', age : '20'});
+    // '20' : 문자열과 숫자를 더하는 것으로 인식 ex) 20 + 1 = 201
+    // "20" : 
     const [person, setPerson] = useState({name : 'KH', age : 20});
 
     const updateAge = () => {
