@@ -1,6 +1,8 @@
 import React, {useState} from "react";
 
 function ObjectExample () {
+    // age : '20' 은 문자열 age : 20 은 int
+    //const [person, setPerson] = useState({name : 'KH', age : '20'});
     const [person, setPerson] = useState({name : 'KH', age : 20});
 
     const updateAge = () => {
