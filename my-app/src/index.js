@@ -1,21 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import Count from './Count';
+import App from './js/App';
+import Count from './js/Count';
 import reportWebVitals from './reportWebVitals';
-import ToggleButton from './ToggleButton';
-import IndexExample from './IndexExample';
+import ToggleButton from './js/ToggleButton';
+import IndexExample from './js/IndexExample';
+import ImageChange from './js/ImageChange';
+import ObjectExample from'./js/ObjectExample';
 
 {/**/}
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/*<App /> react에서 주석은 { /* * / }로 표기함 */}   
-    <Count />
+    {/*<Count />*/}
     <ToggleButton />
     <IndexExample />
+    <ImageChange />
+    <ObjectExample />
   </React.StrictMode>
+
 );
 reportWebVitals();
 

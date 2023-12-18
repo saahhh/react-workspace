@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import rupy from './img/IMG_6576.png'
+import rupy from '../img/IMG_6576.png'
 //증가시키는 함수
 function AddCount() { //함수를 import할 땐 첫 글자를 대문자로 써준다
   //useState를 활용해서 값 증가하는 함수를 완성할 것
