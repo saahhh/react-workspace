@@ -2,7 +2,8 @@
 //map 활용해서 todoList
 //useCallback를 활용해서 버튼만들어서 증가하기 만들기
 
-import React, { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
+import '../App.css';
 
 function ExCallBack() {
     const [count, setCount] = useState(0);
@@ -21,8 +22,10 @@ function ExCallBack() {
 const TodoList = () => {
     //할일 목록 배열을 위한 state 생성
     const [todos, setTodos] = useState([]);
+
     //할일 추가하기 위한 input String state 생성
     const [newTodo, setNewTodo] = useState('');
+
     //할 일이 추가될 때마다 자동으로 할 일 갯수 추가해주는 count state생성
     const [count, setCount] = useState(0);
 
@@ -39,15 +42,21 @@ const TodoList = () => {
         const updateTodos = [...todos];
         updateTodos.splice(index,1);
         setTodos(updateTodos);
-    };
-
-    //할 일을 삭제할 경우 count 감소
-    setCount(count - 1); 
+        
+        //할 일을 삭제할 경우 count 감소
+        setCount(count - 1); 
+        };
 
     useEffect(() => {
         document.title = `TodoList : ${count}`;
     }, [count]); //count를 사용할 때 마다
 
+    useEffect(()=>{
+        console.log(`시작 : ${count}`);
+        return() => {
+            console.log(`종료`);
+        }
+    });
 
     return (
         <div>
@@ -62,17 +71,18 @@ const TodoList = () => {
                     {todo}
                     <button onClick={() => removeTodo(index)}>삭제하기</button>
                     </li>
-                    ))}
+                ))}
 
             </ul>
             </div>
         </div>
-    );
+        //th:each todo : ${todos} = map todo,index : ${todos}
+    )
 };
 
 
 
-function MiniApp() {
+function MiniApp() { // 실행해야하는 순위가 있는데 div로 감싸지 않으면 레벨이 동등하다고 간주한다 때문에 <ExCallBack /> 쓰려면 <div>로 감싸서 사용해야한다
     return (
         <div>
         <ExCallBack />
