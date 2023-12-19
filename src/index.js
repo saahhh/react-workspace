@@ -10,6 +10,9 @@ import ImageChange from './js/ImageChange';
 import ObjectExample from'./js/ObjectExample';
 import AnimalSound from './js/Animal';
 import TimerCount from './js/TimerCount';
+import ExampleCallbacks from './js/ExampleCallback';
+import PracticeTwo from './js/PracticeTwo';
+
 
 
 {/**/}
@@ -23,7 +26,9 @@ root.render(
     {/*<ImageChange />*/}
    {/* <ObjectExample />*/}
    {/*  <AnimalSound />*/}
-    <TimerCount />
+   {/* <TimerCount />*/}
+   {/* <ExampleCallbacks />*/}
+    <PracticeTwo />
   </React.StrictMode>
 
 );
