@@ -8,6 +8,9 @@ import ToggleButton from './js/ToggleButton';
 import IndexExample from './js/IndexExample';
 import ImageChange from './js/ImageChange';
 import ObjectExample from'./js/ObjectExample';
+import AnimalSound from './js/Animal';
+import TimerCount from './js/TimerCount';
+
 
 {/**/}
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -15,10 +18,12 @@ root.render(
   <React.StrictMode>
     {/*<App /> react에서 주석은 { /* * / }로 표기함 */}   
     {/*<Count />*/}
-    <ToggleButton />
-    <IndexExample />
-    <ImageChange />
-    <ObjectExample />
+    {/*<ToggleButton />*/}
+   {/* <IndexExample />*/}
+    {/*<ImageChange />*/}
+   {/* <ObjectExample />*/}
+   {/*  <AnimalSound />*/}
+    <TimerCount />
   </React.StrictMode>
 
 );
