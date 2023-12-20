@@ -20,18 +20,18 @@ import Board from './js/Board';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-   {/* <App /> */} {/*react에서 주석은 { /* * / }로 표기함 */}   
-    {/*<Count />*/}
-    {/*<ToggleButton />*/}
-   {/* <IndexExample />*/}
-    {/*<ImageChange />*/}
-   {/* <ObjectExample />*/}
-   {/*  <AnimalSound />*/}
-   {/* <TimerCount />*/}
-   {/* <ExampleCallbacks />*/}
-   {/*  <PracticeTwo />*/}
-   {/*<ParentComponent /> */}
-   <Board />
+  {/* <App /> */} {/*react에서 주석은 { /* * / }로 표기함 */}   
+  {/*<Count />*/}
+  {/*<ToggleButton />*/}
+  {/* <IndexExample />*/}
+  {/*<ImageChange />*/}
+  {/* <ObjectExample />*/}
+  {/*  <AnimalSound />*/}
+  {/* <TimerCount />*/}
+  {/* <ExampleCallbacks />*/}
+  {/*  <PracticeTwo />*/} 
+  {/*<ParentComponent /> */}
+  <Board />
   </React.StrictMode>
 
 );
