@@ -2,6 +2,7 @@ react-router-dom
 
 다른페이지로 이동할 때 링크를 처리하는데 사용
     사용방법 : npm install react-router-dom
+             (= npm i react-router-dom)
 
 BrowserRouter : html 라우팅 처리하는데 사용
     라우팅 : 다른 페이지간의 전환이나 네비게이션 관리하는 것을 나타냄

@@ -30,12 +30,16 @@ const App = () => {
             <li>
               <Link to="/about">소개</Link>
             </li>
+            <li>
+              <Link to="/todo">TodoList</Link>
+            </li>
           </ul>
         </nav>
         <hr />
         <Routes>
           <Route path='/' element={<Blog />} />
           <Route path='/about' element={<About />} />
+          <Route path='/todo' element={<PracticeTwo />} />
         </Routes>
       </div>
     </Router>

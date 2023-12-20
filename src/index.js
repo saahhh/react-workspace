@@ -12,7 +12,7 @@ import AnimalSound from './js/Animal';
 import TimerCount from './js/TimerCount';
 import ExampleCallbacks from './js/ExampleCallback';
 import PracticeTwo from './js/PracticeTwo';
-
+import ParentComponent from './js/ParentComponent';
 
 
 {/**/}
@@ -29,6 +29,7 @@ root.render(
    {/* <TimerCount />*/}
    {/* <ExampleCallbacks />*/}
    {/*  <PracticeTwo />*/}
+   {/*<ParentComponent /> */}
   </React.StrictMode>
 
 );
