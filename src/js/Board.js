@@ -44,11 +44,6 @@ function Board() {
         localStorage.setItem('posts', JSON.stringify(removePost));
     }
 
-    const startEdit = (index, todo) => {
-        setEditPost(index);
-        setEditPost
-    }
-
     return (
         <div>
             <h1>게시판</h1>

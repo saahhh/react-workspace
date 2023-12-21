@@ -14,6 +14,8 @@ import ExampleCallbacks from './js/ExampleCallback';
 import PracticeTwo from './js/PracticeTwo';
 import ParentComponent from './js/ParentComponent';
 import Board from './js/Board';
+import HelloWorld from './js/JSXExam';
+import TagEaxm from './js/TagExam';
 
 
 {/**/}
@@ -31,7 +33,9 @@ root.render(
   {/* <ExampleCallbacks />*/}
   {/*  <PracticeTwo />*/} 
   {/*<ParentComponent /> */}
-  <Board />
+  {/*<Board />*/}
+  {/*<HelloWorld />*/}
+  <TagEaxm />
   </React.StrictMode>
 
 );

@@ -6,7 +6,7 @@ import React from 'react';
 //Routes : 여러 개 Route를 그룹으로 만들고 관리하는데 사용
 //Link : 클릭 가능한 링크를 생성하는데 사용
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import Blog from '../js/Blog';
+import Blog from './Blog';
 
 /*
 const About = () => {
